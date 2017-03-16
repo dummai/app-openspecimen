@@ -8,7 +8,7 @@ networks:
 services:
 
   §§INSTANCE-openspecimen-web:
-    image: bibbox/openspecimen
+    image: bibbox/openspecimen:v1-0
     container_name: §§INSTANCE-openspecimen-web
     restart: unless-stopped
     networks:
@@ -38,7 +38,7 @@ services:
       - §§INSTANCE-openspecimen-data
 
   §§INSTANCE-openspecimen-db:
-    image: mysql
+    image: mysql:8
     container_name: §§INSTANCE-openspecimen-db
     restart: unless-stopped
     networks:
