@@ -18,7 +18,7 @@ services:
       - MYSQL_DATABASE=§§MYSQL_DATABASE
       - MYSQL_USER=§§MYSQL_USER
       - MYSQL_PASSWORD=§§MYSQL_PASSWORD
-      - RELEASEURL=https://github.com/krishagni/openspecimen/archive/v4.0.RC1.zip
+      - RELEASEURL=https://github.com/krishagni/openspecimen/archive/v4.0.zip
     environment:
       - DATABASE_HOST=§§INSTANCE-openspecimen-db
     volumes_from: 
@@ -55,7 +55,7 @@ services:
       - §§INSTANCE-openspecimen-data
 
   §§INSTANCE-openspecimen-db:
-    image: mysql
+    image: mariadb
     container_name: §§INSTANCE-openspecimen-db
     restart: unless-stopped
     networks:
