@@ -26,6 +26,10 @@ ADD configs/context.xml /opt/tomcat/conf/context.xml
 # ADD openspecimen war file build with the gradle container with default values
 ADD openspecimen.war /opt/dist/openspecimen.war
 
+# ADD workaround_js_error.zip to fix the js error in version 4.0 build
+# http://forums.openspecimen.org/t/javascript-problem-with-openspecimen-4-gui-not-loading/935
+ADD workaround_js_error.zip /opt/dist/workaround_js_error.zip
+
 ADD scripts /opt/scripts
 WORKDIR /opt/scripts
 RUN chmod a+x *.sh
