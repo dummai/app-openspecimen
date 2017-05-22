@@ -58,7 +58,7 @@ else
   $CATALINA_HOME/bin/startup.sh
 fi
 
-cp /opt/dist/workaround_js_error.zip /$CATALINA_HOME/webapps/ROOT/workaround_js_error.zip
+cp /opt/dist/workaround_js_error.zip $CATALINA_HOME/webapps/ROOT/workaround_js_error.zip
 unzip -o /opt/tomcat/webapps/ROOT/workaround_js_error.zip -d /opt/tomcat/webapps/ROOT/
 
 tail -f $CATALINA_HOME/logs/catalina.out -f /opt/openspecimen/os-data/logs/os.log
