@@ -75,6 +75,8 @@ createFolders()
         mkdir -p "$folder/data/dist"
         mkdir -p "$folder/data/os-data"
         mkdir -p "$folder/data/os-plugins"
+
+        cp "os-plugins/os-miabis-1.0.0.jar" "$folder/data/os-plugins/os-miabis-1.0.0.jar"
     fi
 }
 
